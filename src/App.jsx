@@ -9,7 +9,7 @@ function App() {
       name: 'Линкевич Кирилл Олегович',
       role: 'Инженер-системотехник · БГУИР',
       city: 'Минск, Беларусь',
-      about: 'Студент 4 курса БГУИР, кафедра ЭВМ (КСиС). Ищу распределение в IT. Интересуюсь разработкой, сопровождением ПО. Проходил производственную практику в ЕРИП.',
+      about: 'Студент 4 курса БГУИР, кафедра ЭВМ (КСиС). Ищу распределение в IT/Computer engineering. Интересуюсь разработкой, сопровождением ПО. Проходил производственную практику в ЕРИП.',
       skills: {
         strong: ['SQL', 'Java', 'Python', 'C++', 'Linux', 'Git'],
         basic: ['React', 'HTML/CSS', 'Сети (TCP/IP)', 'UML'],
@@ -51,7 +51,7 @@ function App() {
       name: 'Kirill Linkevich',
       role: 'Computer Systems Engineer · BSUIR',
       city: 'Minsk, Belarus',
-      about: '4th year student at BSUIR, Computer Engineering Department (FCSaS). Looking for a job placement in IT. Interested in software development and support. Completed an internship at ERIP.',
+      about: '4th year student at BSUIR, Computer Engineering Department (FCSaS). Looking for a job placement in IT or computer engineering. Interested in software development and support. Completed an internship at ERIP.',
       skills: {
         strong: ['SQL', 'Java', 'Python', 'C++', 'Linux', 'Git'],
         basic: ['React', 'HTML/CSS', 'Networking (TCP/IP)', 'UML'],
