@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.cv {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cv-header {
+  position: relative;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.lang-switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 6px;
+}
+
+.lang-switch button {
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.lang-switch button.active {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.role {
+  font-size: 18px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.city {
+  color: #666;
+  font-size: 14px;
+}
+
+.contacts {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.contacts a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+.cv-section {
+  margin-bottom: 28px;
+}
+
+.cv-section h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #111;
+  border-left: 4px solid #2563eb;
+  padding-left: 10px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.skills h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skills li {
+  background: #eef2ff;
+  color: #1e3a8a;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.exp, .project {
+  margin-bottom: 16px;
+}
+
+.exp h3, .project h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.period, .stack {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.exp ul {
+  padding-left: 20px;
+}
+
+.exp li {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.cv-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cv-footer button {
+  padding: 10px 24px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cv-footer button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .cv {
+    margin: 0;
+    border-radius: 0;
+    padding: 24px;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .cv {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .lang-switch, .cv-footer {
+    display: none;
+  }
+}
