@@ -321,7 +321,6 @@ h1 {
   .qr-block {
     position: static;
     margin: 0 auto 16px;
-    display: none !important;
   }
 }
 
@@ -347,7 +346,7 @@ h1 {
   }
 
   .qr-block {
-    display: block !important;
+    display: block;
   }
 
   .cv-section {
