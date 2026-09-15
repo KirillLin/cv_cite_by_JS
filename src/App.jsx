@@ -29,7 +29,7 @@ function App() {
       ],
       education: {
         uni: 'БГУИР',
-        dept: 'Кафедра ЭВМ (ФКСиС). Основные курсы - Программирование на языках высокого уровня, Базы данных, Основы компьютерный сетей, Администрирование компьютерных сетей, Оборудование компьютерных сетей, Жизненный цикл разработки ПО и др.',
+        dept: 'Кафедра ЭВМ (ФКСиС). Основные курсы — Программирование на языках высокого уровня, Базы данных, Основы компьютерных сетей, Администрирование компьютерных сетей, Оборудование компьютерных сетей, Жизненный цикл разработки ПО и др.',
         years: '2023–2027',
       },
       contacts: {
@@ -46,6 +46,7 @@ function App() {
         strong: 'Уверенно',
         basic: 'Базово',
       },
+      qrLabel: 'Сканируй',
     },
     en: {
       name: 'Kirill Linkevich',
@@ -71,7 +72,7 @@ function App() {
       ],
       education: {
         uni: 'BSUIR',
-        dept: 'Computer Engineering Department (FKSiS, EVM). Main coursesHigh-level language programming, Databases, Fundamentals of computer networks, Computer network administration, Computer network hardware, Software development life cycle, etc.' ,
+        dept: 'Computer Engineering Department (FCSaS, EVM). Main courses — High-level language programming, Databases, Fundamentals of computer networks, Computer network administration, Computer network hardware, Software development life cycle, etc.',
         years: '2023–2027',
       },
       contacts: {
@@ -88,6 +89,7 @@ function App() {
         strong: 'Strong',
         basic: 'Basic',
       },
+      qrLabel: 'Scan me',
     },
   };
 
@@ -99,6 +101,11 @@ function App() {
           <div className="lang-switch">
             <button onClick={() => setLang('ru')} className={lang === 'ru' ? 'active' : ''}>RU</button>
             <button onClick={() => setLang('en')} className={lang === 'en' ? 'active' : ''}>EN</button>
+          </div>
+
+          <div className="qr-block">
+            <img src="/qr.png" alt="QR-код на резюме" className="qr" />
+            <p className="qr-label">{t.qrLabel}</p>
           </div>
 
           <div className="header-main">
