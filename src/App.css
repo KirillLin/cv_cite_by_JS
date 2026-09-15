@@ -22,19 +22,18 @@ body {
   transition: opacity 0.2s ease;
 }
 
-/* ===== Шапка ===== */
+
 .cv-header {
   position: relative;
   border-bottom: 2px solid #eaeaea;
   padding-bottom: 24px;
   margin-bottom: 32px;
-  padding-right: 120px; /* место под QR справа */
 }
 
 .lang-switch {
   position: absolute;
   top: 0;
-  right: 110px; /* сдвиг влево от QR */
+  right: 0;
   display: flex;
   gap: 6px;
 }
@@ -60,31 +59,6 @@ body {
   background: #2563eb;
   color: #fff;
   border-color: #2563eb;
-}
-
-/* QR-код */
-.qr-block {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: center;
-}
-
-.qr {
-  width: 90px;
-  height: 90px;
-  display: block;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 4px;
-  background: #fff;
-}
-
-.qr-label {
-  font-size: 11px;
-  color: #6b7280;
-  margin-top: 4px;
-  letter-spacing: 0.3px;
 }
 
 .header-main {
@@ -129,7 +103,6 @@ h1 {
   margin-top: 2px;
 }
 
-/* ===== Контакты ===== */
 .contacts {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +128,6 @@ h1 {
   margin-right: 14px;
 }
 
-/* ===== Секции ===== */
 .cv-section {
   margin-bottom: 28px;
   padding-bottom: 24px;
@@ -182,7 +154,6 @@ h1 {
   color: #374151;
 }
 
-/* ===== Навыки ===== */
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -214,7 +185,6 @@ h1 {
   font-weight: 500;
 }
 
-/* ===== Опыт ===== */
 .exp {
   margin-bottom: 18px;
 }
@@ -253,7 +223,6 @@ h1 {
   margin-bottom: 5px;
 }
 
-/* ===== Футер ===== */
 .cv-footer {
   text-align: center;
   margin-top: 32px;
@@ -279,15 +248,12 @@ h1 {
   transform: scale(0.98);
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 640px) {
   .cv {
     margin: 0;
     border-radius: 0;
     padding: 28px 20px;
-  }
-
-  .cv-header {
-    padding-right: 0;
   }
 
   .skills {
@@ -317,11 +283,30 @@ h1 {
     justify-content: center;
     margin-bottom: 16px;
   }
+}
 
-  .qr-block {
-    position: static;
-    margin: 0 auto 16px;
-  }
+.qr-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+.qr {
+  width: 90px;
+  height: 90px;
+  display: block;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 4px;
+  background: #fff;
+}
+
+.qr-label {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+  letter-spacing: 0.3px;
 }
 
 @media print {
@@ -339,14 +324,6 @@ h1 {
   .lang-switch,
   .cv-footer {
     display: none;
-  }
-
-  .cv-header {
-    padding-right: 120px;
-  }
-
-  .qr-block {
-    display: block;
   }
 
   .cv-section {
