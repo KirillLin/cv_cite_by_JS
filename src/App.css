@@ -279,8 +279,7 @@ h1 {
   transform: scale(0.98);
 }
 
-/* ===== Адаптив ===== */
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .cv {
     margin: 0;
     border-radius: 0;
@@ -325,7 +324,6 @@ h1 {
   }
 }
 
-/* ===== Печать PDF ===== */
 @media print {
   body {
     background: #fff;
